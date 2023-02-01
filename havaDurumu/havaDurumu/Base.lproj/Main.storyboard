@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="havaDurumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hava Durumu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHO-Uv-9By">
+                                <rect key="frame" x="51" y="109" width="273" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="tOA-Ai-9jb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hangi şehrin hava durumunu öğrenmek istiyorsunuz?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-xg-aiH">
+                                <rect key="frame" x="75" y="191" width="225" height="91"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şehir Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUP-fg-dDM">
+                                <rect key="frame" x="51" y="290" width="273" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="zqM-pd-RWI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKL-9Z-WZT">
+                                <rect key="frame" x="65" y="355" width="245" height="43"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ZeT-wS-qC6"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="13" height="7"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hava Durumunu Getir">
+                                    <backgroundConfiguration key="background" cornerRadius="23" strokeWidth="0.0" strokeOutset="0.0">
+                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFa-cp-0zp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-FQ-gzG">
+                                <rect key="frame" x="65" y="494" width="245" height="247"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KKL-9Z-WZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="DlX-73-Wff"/>
+                            <constraint firstItem="KKL-9Z-WZT" firstAttribute="trailing" secondItem="UBe-FQ-gzG" secondAttribute="trailing" id="Dnc-Ik-KFL"/>
+                            <constraint firstItem="SvI-xg-aiH" firstAttribute="centerX" secondItem="wUP-fg-dDM" secondAttribute="centerX" id="DzB-LS-G57"/>
+                            <constraint firstItem="sHO-Uv-9By" firstAttribute="trailing" secondItem="wUP-fg-dDM" secondAttribute="trailing" id="EbC-ay-5lZ"/>
+                            <constraint firstItem="SvI-xg-aiH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="EiN-6o-6ff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UBe-FQ-gzG" secondAttribute="bottom" constant="37" id="K9s-Ws-mzF"/>
+                            <constraint firstItem="wUP-fg-dDM" firstAttribute="top" secondItem="SvI-xg-aiH" secondAttribute="bottom" constant="8" id="LP4-lA-fym"/>
+                            <constraint firstItem="wUP-fg-dDM" firstAttribute="centerX" secondItem="KKL-9Z-WZT" secondAttribute="centerX" id="PkA-Ur-Jqi"/>
+                            <constraint firstItem="sHO-Uv-9By" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="Z3U-yy-Nom"/>
+                            <constraint firstItem="SvI-xg-aiH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="ZqP-Vw-Unv"/>
+                            <constraint firstItem="sHO-Uv-9By" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="cAH-fp-sD1"/>
+                            <constraint firstItem="wUP-fg-dDM" firstAttribute="top" secondItem="sHO-Uv-9By" secondAttribute="bottom" constant="97" id="hhR-v2-A01"/>
+                            <constraint firstItem="KKL-9Z-WZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i5B-jJ-a8I"/>
+                            <constraint firstItem="sHO-Uv-9By" firstAttribute="leading" secondItem="wUP-fg-dDM" secondAttribute="leading" id="k7c-uw-atL"/>
+                            <constraint firstItem="KKL-9Z-WZT" firstAttribute="top" secondItem="wUP-fg-dDM" secondAttribute="bottom" constant="31" id="tJD-8z-KNW"/>
+                            <constraint firstItem="KKL-9Z-WZT" firstAttribute="leading" secondItem="UBe-FQ-gzG" secondAttribute="leading" id="xZX-64-Mg1"/>
+                            <constraint firstItem="UBe-FQ-gzG" firstAttribute="top" secondItem="KKL-9Z-WZT" secondAttribute="bottom" constant="96" id="y4T-Sa-ksl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kwI-be-9ww"/>
+                    <connections>
+                        <outlet property="Button" destination="KKL-9Z-WZT" id="zln-3q-2ma"/>
+                        <outlet property="textField" destination="wUP-fg-dDM" id="5mp-PN-lXh"/>
+                        <segue destination="OSr-eu-DTh" kind="show" id="DII-2H-T2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888.8" y="2.9556650246305418"/>
+        </scene>
+        <!--Hava Durumu-->
+        <scene sceneID="BgW-NO-jsR">
+            <objects>
+                <viewController storyboardIdentifier="DetailController" id="OSr-eu-DTh" customClass="DeatailController" customModule="havaDurumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxP-mc-HaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="tWA-P2-neR">
+                                <rect key="frame" x="65" y="494" width="244" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itR-9g-Qng">
+                                <rect key="frame" x="54" y="112" width="267" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1T-bT-W27">
+                                <rect key="frame" x="54" y="193" width="267" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mC6-a4-ZcW"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hava Durumu" id="ukh-bP-zwb"/>
+                    <connections>
+                        <outlet property="sehir" destination="itR-9g-Qng" id="ACl-PN-gha"/>
+                        <outlet property="sicaklik" destination="D1T-bT-W27" id="MGd-xM-lyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXF-FB-UFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792.8000000000002" y="2.9556650246305418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i8Y-3k-EfI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xEX-IM-iqy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZVh-7V-yK8">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hRi-iS-wcw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OD-3O-YZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="699" height="709"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
